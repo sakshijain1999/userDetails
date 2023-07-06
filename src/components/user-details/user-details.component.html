@@ -1,0 +1,93 @@
+<div class="container">
+  <div class="row" style="margin-top: 2rem">
+    <div class="col-4 " style="margin-top: 5rem;">
+      <div class="card">
+        <div class="card_img">
+          <img 
+         
+            src="../../assets/professional-mens-hairstyles-combed-min-1024x683.webp"
+          
+          />
+          <img *ngIf="shortLink"
+         
+            src={{shortLink}}
+          
+          />
+          
+          
+        </div>
+          <div>
+            <form formGroup="myForm" >
+        <input  type="file"    accept="image/*"
+        (change)="onChange($event)" 
+        formControlName="file"
+>
+        
+        <button (click)="onUpload()"  
+        class="btn btn-success">
+        Upload
+    </button>
+    </form>
+    
+        </div>
+           
+         <br>
+         <hr>
+        <div class="card_info">
+       
+          <h2>Jone Smith</h2>
+          <p>CFA, CIC</p>
+          <p>Premium Member</p>
+          <p> 
+            <i class="fa fa-graduation-cap"></i> Insurance Agent, Attorney, Accountant</p>
+         
+          <div class="card-footer text-muted"> <h3 style=" color: red"  > <i   style="margin-right: 1rem"  class="bi bi-envelope-paper-heart-fill"></i>Send an Email</h3></div>
+         
+        </div>
+      </div>
+    </div>
+
+    <div class="col-8" style="margin-top: 5rem;" >
+      <div class="card ">
+         <div class="card-header"> <h2>Bussiness Details </h2></div>
+         <div class="card-body">
+           <div class="card-title" style="display: flex; justify-content: space-around;"> <h5>Profile</h5>
+            <button type="button" class="btn btn-danger" (click)="edit()">Edit Profile</button>
+
+         </div>
+           <hr>
+               <div 
+           class="card-text">
+           <div class="row">
+           <h4> Name :  {{userDetails.name}}</h4>
+           </div>
+           <div class="row">
+            <h4> Domain : {{userDetails.domain}} </h4>
+           </div>
+           <div class="row">
+            <h4> Gender :  {{userDetails.gender}} </h4>
+           </div>
+           <div class="row">
+            <h4>
+            Date of Birth : {{userDetails.dateofbirth}}
+            </h4>
+           </div>
+           <div class="row">
+            <h4>
+            Phone Number  :  {{userDetails.number}}
+            </h4>
+           </div>
+           <div class="row">
+            <h4>
+              {{userDetails.Location}}
+            </h4>
+           </div>
+         </div>
+              
+         </div>
+        
+       </div>
+     
+    </div>
+  </div>
+</div>

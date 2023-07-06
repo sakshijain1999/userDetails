@@ -1,0 +1,68 @@
+<div  class="innerContainer" >
+    <div class="table-container mb-3">
+        <form formGroup="userFrm" style="margin-top: 10%;">
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label class="formLabel mb-1">Name <span class="required" style="color: #FF0000">
+                                *</span></label>
+                        <input   type="text" class="form-control" placeholder="Enter Name" formControlName="name"
+                            >
+                   
+                    </div>
+                </div>
+              
+                <div class="col">
+                    <div class="form-group">
+                        <label class="formLabel mb-1">Date Of Birth 
+                        </label>
+                        <input type="date" class="form-control"  formControlName="dateofbirth" >
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <label class="formLabel mb-1">Contact No. 
+                                </label>
+                       <input type="number" class="form-control" placeholder="Enter Number" formControlName="number" >
+                    </div>
+                </div>
+              
+            </div>
+            <div class="row mt-4">
+                <div class="col">
+                    <div class="form-group">
+                        <label class="formLabel mb-1">Domain 
+                        </label>
+               <input type="text" class="form-control" placeholder="Enter domain" formControlName="domain" >
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="form-group">
+                        <label class="formLabel mb-1">Domain 
+                        </label>
+               <input type="text" class="form-control" placeholder="Enter gender" formControlName="gender" >
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <label class="formLabel mb-1">Location 
+                        </label>
+               <input type="text" class="form-control" placeholder="Enter Location" formControlName="Location" >
+                    </div>
+                </div>
+               
+             
+               
+              
+         </div>
+       
+              
+
+            <div class="mt-4">
+                <button type="submit" class="btn btn-lg text-white" style="background-color: #0057FF;"   (click)="EditUser(userFrm.value)">Edit User Details</button>
+  
+            </div>
+        </form>
+    </div>
+</div>

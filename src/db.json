@@ -1,0 +1,16 @@
+
+{
+    "getAll": [
+    {
+      "id": 1,
+      "name ": " Mary,Jason & Hodge of Attorney",
+      "domain": "www.mjhattorenys.com",
+      "gender": "Male",
+      "dateofbirth": "8th june 1979",
+      "number":8654321234,
+      "Location":"12 street,silicon valley,Avenue NE, Huntsville"
+    }
+   
+  ]
+
+}
